@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <article id="calendar-container">
+      <div id="header-container">
+        <button id="prev-month" onclick="prevMonth()"><</button>
+        <span id="calendar-month"></span>
+        <button id="next-month" onclick="nextMonth()">></button>
+      </div>
+      <div id="dates-container">
+      </div>
+      <div id="notes-container">
+        <div>
+          <p>Your notes: </p>
+          <textarea id="notes-input"></textarea>
+        </div>
+        <button onclick="saveNote()">Save</button>
+      </div>
+    </article>
+    <script src="./date.js"></script>
+  </body>
+</html>

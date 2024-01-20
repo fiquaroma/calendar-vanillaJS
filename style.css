@@ -1,0 +1,134 @@
+body {
+  font-size: 20px;
+}
+
+p {
+  margin: 8px 0;
+  font-weight: 700;
+}
+
+article {
+  width: max-content;
+  margin: auto;
+
+  background-color: azure;
+  border-radius: 10px;
+
+  padding: 30px;
+}
+
+button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  padding: 0;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#header-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#header-container > button {
+  width: max-content;
+  font-size: 24px;
+}
+
+#calendar-month {
+  width: 150px;
+  text-align: center;
+}
+
+#dates-container {
+  display: flex;
+  gap: 10px;
+  margin: auto;
+}
+
+#dates-container > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  margin: auto;
+}
+
+#dates-container button {
+  padding: 5px;
+  border: 2px solid transparent;
+  outline: 2px solid transparent;
+  border-radius: 100px;
+}
+
+#dates-container button:hover {
+  background-color: lightgray;
+  color: white;
+}
+
+#dates-container button.blur {
+  color: gray;
+}
+
+#dates-container button.selected {
+  outline-color: darkgray;
+}
+
+#dates-container button.today {
+  background-color: darkgray;
+}
+
+#dates-container button.today.selected {
+  border-color: azure;
+}
+
+#dates-container button.underline.red {
+  color: red;
+  text-decoration: underline;
+}
+
+
+#calendar-container > div {
+   display: flex;
+   gap: 15px;
+}
+
+#notes-container {
+  align-items: center;
+}
+
+#notes-container > div:first-child {
+  width: 100%;
+  border: none;
+}
+
+#notes-container textarea {
+  width: 100%;
+  height: 100px;
+}
+
+#notes-container > button {
+  height: max-content;
+  width: max-content;
+  background-color: skyblue;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 10px;
+  border: none;
+}
+
+#notes-container > button:hover {
+  background-color: lightskyblue;
+  color: aliceblue;
+}
